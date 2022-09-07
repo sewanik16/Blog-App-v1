@@ -38,7 +38,7 @@ router.delete("/delete/:id",(req,res)=>{
     })
 })
 
-let str=[]
+// let str=[]
 let result=[]
 router.get("/search/:key", (req, res) => {
     result=[]

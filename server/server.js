@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const BlogControlller = require('./routes/blog-route')
+const CreateBlogController = require('./routes/createBlog-route')
 
 const app = express();
 
@@ -24,3 +25,4 @@ app.get("/",(req,res) => {
 })
 
 app.use("/blog",BlogControlller)
+app.use("/create",CreateBlogController)
